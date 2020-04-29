@@ -1,3 +1,40 @@
+@font-face {
+    font-family: montserrat-light;
+    src: url(../fonts/Montserrat-Light.ttf);
+    font-weight: 300;
+    font-style: normal;
+}
+@font-face {
+    font-family: montserrat-regular;
+    src: url(../fonts/Montserrat-Regular.ttf);
+    font-weight: 400;
+    font-style: normal;
+}
+@font-face {
+    font-family: raleway-regular;
+    src: url(../fonts/Raleway-Regular.ttf);
+    font-weight: 400;
+    font-style: normal;
+}
+@font-face {
+    font-family: raleway-medium;
+    src: url(../fonts/Raleway-Medium.ttf);
+    font-weight: 500;
+    font-style: normal;
+}
+@font-face {
+    font-family: raleway-extrabold;
+    src: url(../fonts/Raleway-ExtraBold.ttf);
+    font-weight: 400;
+    font-style: normal;
+}
+@font-face {
+    font-family: raleway-semibold;
+    src: url(../fonts/Raleway-SemiBold.ttf);
+    font-weight: 400;
+    font-style: normal;
+}
+
 body {
     margin: 0;
 }
@@ -11,7 +48,7 @@ body {
     background-blend-mode: darken;
     margin: 0;
     position: relative;
-    padding: 40px;
+    padding: 42px;
     box-sizing: border-box;
     display: flex;
     flex-wrap: wrap;
@@ -37,7 +74,7 @@ body {
 }
 .logo-txt {
     line-height: 26px;
-    font-family: Raleway;
+    font-family: raleway-regular;
     font-size: 34px;
     font-weight: 400;
     letter-spacing: -1.36px;
@@ -58,7 +95,7 @@ body {
 .main-header-menu {
     list-style: none;
     margin: 0 60px 0 0 ;
-    font-family: Montserrat;
+    font-family: montserrat-light;
 }
 .main-header-list {
     display: inline-block;
@@ -137,7 +174,7 @@ body {
 
 .carusel-title-1 {
     color: #ffffff;
-    font-family: Raleway;
+    font-family: raleway-medium;
     font-size: 36px;
     font-weight: 500;
     display: block;
@@ -145,7 +182,7 @@ body {
 }
 .carusel-title {
     color: #ffffff;
-    font-family: "Raleway - Extra Bold";
+    font-family: raleway-extrabold;
     font-size: 52px;
     font-weight: 400;
     text-align: center;
@@ -155,7 +192,7 @@ body {
 .carusel-p {
     width: 562px;
     color: #ffffff;
-    font-family: Montserrat;
+    font-family: montserrat-light;
     font-size: 16px;
     font-weight: 300;
     line-height: 24px;
@@ -170,7 +207,7 @@ body {
     background-color: #998675;
     text-transform: uppercase;
     color: #ffffff;
-    font-family: "Raleway - Extra Bold";
+    font-family: raleway-extrabold;
     font-size: 14px;
     font-weight: 400;
     line-height: 23px;
@@ -215,7 +252,7 @@ body {
     flex-wrap: wrap;
 }
 .feature-item {
-    width: 15%;
+    width: 16%;
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
@@ -239,26 +276,26 @@ body {
 }
 .feature-title {
     color: #555555;
-    font-family: "Raleway - Semi Bold";
+    font-family: raleway-semibold;
     font-size: 22px;
     font-weight: 400;
     width: 100%;
     text-align: center;
-    margin-top: 30px;
+    margin-top: 23px;
 }
 .feature-txt {
     color: #8c8c8c;
-    font-family: Montserrat;
+    font-family: montserrat-light;
     font-size: 14px;
     font-weight: 300;
     line-height: 24px;
     text-align: center;
-    margin: 10px 0 25px 0;
+    margin: 13px 0 26px 0;
 }
 .feature-item:hover .feature-icon {
     fill: #c7b299;
 }
-  
+
 .feature-item:hover .feature-title {
     color: #c7b299;
 }
@@ -268,12 +305,12 @@ body {
     justify-content: center;
     position: relative;
     flex-wrap: wrap;
-    padding-top: 80px;
+    padding-top: 76px;
 }
 .templates-title {
     width: 100%;
     color: #555555;
-    font-family: "Raleway - Semi Bold";
+    font-family: raleway-semibold;
     font-size: 30px;
     font-weight: 400;
     text-align: center;
@@ -281,7 +318,7 @@ body {
 }
 .templates-p {
     color: #8c8c8c;
-    font-family: Montserrat;
+    font-family: montserrat-light;
     width: 35%;
     font-size: 16px;
     font-weight: 300;
