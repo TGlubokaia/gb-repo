@@ -83,8 +83,7 @@ body {
     align-items: center;
     width: 100%;
     position: relative;
-    align-self: stretch;
-    margin: 15% auto 0 auto;
+    margin: 15% auto 15% auto;
 }
 .carusel-btn {
     display: block;
@@ -190,7 +189,7 @@ body {
     width: 100px;
     margin: auto;
     width: 100%;
-    margin: 17% auto 0 auto;
+    margin: 0 auto 0 auto;
 }
 .carusel-pagination-item {
     display: block;
