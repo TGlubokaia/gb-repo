@@ -1082,6 +1082,8 @@ body {
     transition: transform 1s ease;
 }
 .partners-link:hover {
-    transform: scale(1.1);
-
+    transform: scale(1.2);
+}
+.partners-link:active {
+    transform: scale(1.1)
 }
