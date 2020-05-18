@@ -260,7 +260,7 @@ body {
 .carusel-title-1 {
     color: #ffffff;
     font-family: raleway-medium;
-    font-size: 36px;
+    font-size: 2vw;
     font-weight: 500;
     display: block;
     text-align: center;
@@ -268,7 +268,7 @@ body {
 .carusel-title {
     color: #ffffff;
     font-family: raleway-extrabold;
-    font-size: 52px;
+    font-size: 3vw;
     font-weight: 400;
     text-align: center;
     display: block;
@@ -278,9 +278,9 @@ body {
     width: 60%;
     color: #ffffff;
     font-family: montserrat-light;
-    font-size: 16px;
+    font-size: 0.9vw;
     font-weight: 300;
-    line-height: 24px;
+    line-height: 1.6vw;
     text-align: center;
     margin: 0 auto;
 }
@@ -759,6 +759,9 @@ body {
     left: 0;
     z-index: 0;
 }
+.video-file:focus-within .video-txt {
+    display: none;
+}
 .video-txt {
     position: absolute;
     width: 30%;
@@ -809,27 +812,28 @@ body {
     fill: #00bff3;
 }
 .devices {
+    max-height: 695px;
+    padding: 10% 13%;
     background-color: #fbfaf8;
     background-image: url(../img/iphone_in_hand.png);
     background-repeat: no-repeat;
     background-position: 28% bottom;
-    padding: 190px 380px 172px 380px;
+    background-size: 22%; 
     display: flex;
     justify-content: flex-end;
+    flex-wrap: wrap;
     box-sizing: border-box;
 }
-.devices-box {
-    max-width: 660px;
-
-}
 .devices-title {
+    width: 60%;
+    display: block;
     color: #555555;
     font-family: raleway-semibold;
     font-size: 30px;
-    display: block;
-    margin: 0 0 25px 0;
+    margin: 0 0 2% 0;
 }
 .devices-p {
+    width: 60%;
     color: #8c8c8c;
     font-family: montserrat-light;
     font-size: 16px;
@@ -837,14 +841,15 @@ body {
     margin: 0 0 32px 0;
 }
 .devices-list {
+    width: 53%;
+    display: inline-block;
     color: #8c8c8c;
     font-family: montserrat-light;
     font-size: 16px;
     line-height: 32px;
-    margin: 0;
+    margin: 0 0 0 5%;
     list-style-type: none;
     padding: 0;
-    margin-left: 100px;
 }
 .devices-list-item {
     position: relative;
@@ -853,8 +858,10 @@ body {
     position: absolute;
     fill: #c7b299;
     left: -50px;
+    top: 13%;
 }
 .counters {
+    clear: both;
     display: flex;
     flex-wrap: wrap;
     justify-content: space-between;
@@ -1211,7 +1218,35 @@ body {
         left: 25%;
         width: 50%;
     }
+    .devices {
+        padding: 7% 14% 10% 14%;
+    }
+    .devices-title {
+        width: 100%;
+        text-align: center;
+    }
 
+}
+
+@media (max-width: 1367px) {
+    .devices {
+        padding: 10% 12%;
+    }
+}
+
+@media (max-width: 1280px) {
+    .devices {
+        padding: 7% 7% 21% 7%;
+        background-size: 23%;
+        background-position: 25% bottom;
+    }
+    .devices-p {
+        width: 100%;
+        text-align: center;
+    }
+    .devices-list {
+        width: 55%;
+    }
 }
 @media (max-width: 1024px) {
     .logo-link {
@@ -1260,6 +1295,25 @@ body {
     .posts-item:nth-child(2) {
         margin-right: 0;
     }
+    .devices {
+        padding: 7% 3% 24% 3%;
+        background-size: 31%;
+        background-position: 16% bottom;
+    }
+    .devices-p {
+        width: 100%;
+        text-align: center;
+        font-size: 2vw;
+    }
+    .devices-list {
+        width: 55%;
+        font-size: 2vw;
+    }
+    .devices-list-icon {
+        width: 50%;
+        left: -40px;
+    }
+
 }
 @media (max-width: 786px) {
     .main-header-top {
@@ -1292,7 +1346,7 @@ body {
         display: none;
     }
     .projects {
-        padding: 4% 0;
+        padding: 4% 7%;
     }
     .projects-button {
         margin: 0 3.5% 2% 3.5%;
@@ -1304,7 +1358,32 @@ body {
     .video-txt {
         left: 10%;
         width: 80%;
+        top: 20%;
     }
+    .devices {
+        padding: 7% 3% 25% 3%;
+        background-size: 42%;
+        background-position: 7% bottom;
+    }
+    .devices-title {
+        font-size: 6vw;
+    }
+    .devices-p {
+        width: 100%;
+        text-align: center;
+        font-size: 2vw;
+        line-height: 4vw;
+    }
+    .devices-list {
+        width: 51%;
+        font-size: 2vw;
+        line-height: 5vw;
+    }
+    .devices-list-icon {
+        width: 50%;
+        left: -28px;
+    }
+
     /* .partners-link {
         margin: 0 1%;
         transform: scale(0.6); 
@@ -1317,48 +1396,39 @@ body {
     .posts-item {
         transform: scale(0.8);
     }
+    .devices {
+        padding: 7% 3% 24% 3%;
+        background-size: 42%;
+        background-position: 7% bottom;
+    }
+    .devices-p {
+        width: 100%;
+        text-align: center;
+        font-size: 3vw;
+        line-height: 4vw;
+    }
+    .devices-list {
+        width: 51%;
+        font-size: 2vw;
+        line-height: 5vw;
+    }
+    .devices-list-icon {
+        width: 50%;
+        left: -28px;
+    }
 }
 
 
 
 /* Диапазоны  */
 
-@media (min-width: 1367px) and (max-width: 1440px) {
-    .carusel-title-1 {
-        font-size: 32px;
-    }
-    .carusel-title {
-        font-size: 50px;
-    }
-    .carusel-p {
-        font-size: 14px;
-    }
-}
 
 @media (min-width: 1281px) and (max-width: 1366px) {
-    .carusel-title-1 {
-        font-size: 26px;
-    }
-    .carusel-title {
-        font-size: 38px;
-    }
-    .carusel-p {
-        font-size: 12px;
-    }
     .counters {
         padding: 4% 15%;
     }    
 }
 @media (min-width: 1025px) and (max-width: 1280px) {
-    .carusel-title-1 {
-        font-size: 26px;
-    }
-    .carusel-title {
-        font-size: 38px;
-    }
-    .carusel-p {
-        font-size: 12px;
-    }
     .feature {
         padding: 3% 20%;
         justify-content: space-evenly;
@@ -1376,15 +1446,6 @@ body {
 }
 
 @media (min-width: 787px) and (max-width: 1024px) and (orientation: landscape){
-    .carusel-title-1 {
-        font-size: 24px;
-    }
-    .carusel-title {
-        font-size: 34px;
-    }
-    .carusel-p {
-        font-size: 10px;
-    }
     .feature {
         padding: 3% 15%;
         justify-content: space-evenly;
