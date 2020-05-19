@@ -1375,7 +1375,16 @@ body {
     .logo-link {
         flex: auto;
     }
-    .main-header-nav {
+    .header-cart {
+        display: none;
+    }
+    .header-search {
+        display: none;
+    }
+    .carusel {
+        display: none;
+    }
+    .carusel-pagination {
         display: none;
     }
     .projects-button {
@@ -1454,18 +1463,6 @@ body {
     .main-header-top {
         width: 90%;
         margin: 6% 5%;
-    }
-    .header-cart {
-        display: none;
-    }
-    .header-search {
-        display: none;
-    }
-    .carusel {
-        display: none;
-    }
-    .carusel-pagination {
-        display: none;
     }
     .feature {
         padding: 0 5%;
